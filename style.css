@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	min-height: 100vh;
+	display: grid;
+	justify-items: center;
+	grid-row-gap: 3rem;
+}
+
+.image_container {
+	width: 50%;
+	align-self: end;
+	position: relative;
+}
+
+.image {
+	width: 100%;
+}
+
+.toggle_button {
+	padding: 1rem;
+	background: red;
+	border: none;
+	color: white;
+	width: 15rem;
+	cursor: pointer;
+}
+
+.toggle_button:focus {
+	outline: none;
+}
+
+.toggle_button:active {
+	transform: translate(0, 2px);
+}
+
+.glass {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(10px);
+}
+
+.hidden {
+	display: none;
+}
